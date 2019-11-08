@@ -84,3 +84,21 @@ Type : INT
 Taille : ,
 Commentaire : 
 
+Nom : Description
+Code : DESCRIPTION
+Type : VARCHAR
+Taille : 500,
+Commentaire : 
+
+Nom : IdCreateur
+Code : IDCREATEUR
+Type : INT
+Taille : ,
+Commentaire : 
+
+Nom : IdMJ
+Code : IDMJ
+Type : INT
+Taille : ,
+Commentaire : 
+
