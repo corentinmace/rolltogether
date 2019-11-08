@@ -44,7 +44,7 @@ CREATE TABLE Partie(
         IdScenario  Int NOT NULL ,
         IdGM        Int NOT NULL ,
         Id_Scenario Int NOT NULL ,
-        Id_User     Int
+        Id_User     Int NOT NULL
 	,CONSTRAINT Partie_PK PRIMARY KEY (Id)
 
 	,CONSTRAINT Partie_Scenario_FK FOREIGN KEY (Id_Scenario) REFERENCES Scenario(Id)
