@@ -1,0 +1,86 @@
+Dictionnaire de données 
+
+Nom : Id
+Code : ID
+Type : AUTO_INCREMENT
+Taille : ,
+Commentaire : 
+
+Nom : Pseudo
+Code : PSEUDO
+Type : VARCHAR
+Taille : 32,
+Commentaire : 
+
+Nom : Password
+Code : PASSWORD
+Type : VARCHAR
+Taille : 32,
+Commentaire : 
+
+Nom : Email
+Code : EMAIL
+Type : VARCHAR
+Taille : 60,
+Commentaire : 
+
+Nom : Nom
+Code : NOM
+Type : VARCHAR
+Taille : 32,
+Commentaire : 
+
+Nom : Prenom
+Code : PRENOM
+Type : VARCHAR
+Taille : 32,
+Commentaire : 
+
+Nom : Photo
+Code : PHOTO
+Type : BLOB
+Taille : ,
+Commentaire : 
+
+Nom : GameMaster
+Code : GAMEMASTER
+Type : INT
+Taille : ,
+Commentaire : 
+
+Nom : IdScenario
+Code : IDSCENARIO
+Type : INT
+Taille : ,
+Commentaire : 
+
+Nom : NbJoueur
+Code : NBJOUEUR
+Type : TINYINT
+Taille : 20,
+Commentaire : 
+
+Nom : Visible
+Code : VISIBLE
+Type : BOOL
+Taille : ,
+Commentaire : 
+
+Nom : Chemin
+Code : CHEMIN
+Type : VARCHAR
+Taille : 60,
+Commentaire : 
+
+Nom : Note
+Code : NOTE
+Type : TINYINT
+Taille : 10,
+Commentaire : 
+
+Nom : IdGM
+Code : IDGM
+Type : INT
+Taille : ,
+Commentaire : 
+
