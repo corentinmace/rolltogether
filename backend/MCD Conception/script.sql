@@ -10,7 +10,7 @@
 CREATE TABLE User(
         Id       Int  Auto_increment  NOT NULL ,
         Pseudo   Varchar (32) NOT NULL ,
-        Password Varchar (32) NOT NULL ,
+        Password Varchar (255) NOT NULL ,
         Email    Varchar (60) NOT NULL ,
         Nom      Varchar (32) ,
         Prenom   Varchar (32) ,
