@@ -1,0 +1,63 @@
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    #main-menu {
+        font-family: "The Wild Breath of Zelda";
+        color: rgb(76, 30, 45);
+    }
+    
+    body {
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    #main-menu .nav-bar {
+        list-style: none;
+        margin-top: 40px;
+    }
+    
+    #main-menu .nav-bar li {
+        display: inline;
+        padding: 0 10px;
+    }
+    
+    #main-menu .nav-bar li a {
+        text-decoration: none;
+        padding-left: 25px;
+        text-transform: uppercase;
+        color: #333;
+        text-shadow: 1px 1px 1px #ccc;
+    }
+    
+    #button {
+        color: white;
+        background: black;
+        font: Bebas Neue cursive;
+    }
+    
+    #form {
+        padding-top: 5%;
+        padding-left: 45%;
+    }
+    
+    .txt {
+        padding-top: 50%;
+    }
+    
+    #page_co {
+        text-align: center;
+    }
+    
+    #page_in {
+        text-align: center;
+        padding-top: 10%;
+    }
+    
+    img {
+        max-width: 250px;
+    }
+    
+    header {
+        border-bottom: solid black 2px;
+    }
