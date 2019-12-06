@@ -51,8 +51,21 @@
     
     img {
         max-width: 250px;
+        position: fixed;
+        top: 0%;
+        left: 0%;
     }
     
     header {
         border-bottom: solid black 2px;
+    }
+    
+    #titre {
+        text-align: center;
+        font-family: "The Wild Breath of Zelda";
+        height: 13vh;
+    }
+    
+    #titre h1 {
+        margin-top: 5vh;
     }
