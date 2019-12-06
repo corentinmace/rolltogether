@@ -30,12 +30,6 @@
         text-shadow: 1px 1px 1px #ccc;
     }
     
-    #button {
-        color: white;
-        background: black;
-        font: Bebas Neue cursive;
-    }
-    
     #form {
         padding-top: 5%;
         padding-left: 45%;
@@ -47,6 +41,7 @@
     
     #page_co {
         text-align: center;
+        padding-top: 10%;
     }
     
     #page_in {

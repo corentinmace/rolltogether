@@ -12,17 +12,25 @@
 </head>
 
 <header>
-
+    <div id="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="Accueil"></a>
+    </div>
 </header>
 
 <body>
     <div id="page_co">
         <h1>Connexion au compte</h1>
     </div>
-
-    <div class="button">
-        <button inputmode="onclick">Se connecter</button>
+    <div id="form">
+        <form action='connexion.php' method='POST'>
+            <label class="txt">Pseudo</label> : <br>
+            <input name='pseudo' type='text' placeholder="Pseudo"> <br>
+            <label class="txt">Mot de passe</label> : <br>
+            <input name='mail' type='password' placeholder="Mot de passe"> <br>
+            <button type="submit" class="button" id="form-submit">Connexion</button>
+        </form>
     </div>
+
 
 </body>
 
