@@ -1,15 +1,16 @@
     * {
         margin: 0%;
         padding: 0%;
+        /* overflow: hidden; */
     }
     
     #main-menu {
-        font-family: "The Wild Breath of Zelda";
-        color: rgb(76, 30, 45);
+        font-family: "The Wild Breath of Zelda", !important;
+        color: rgb(76, 30, 45), !important;
     }
     
     body {
-        font-family: 'Bebas Neue', cursive;
+        font-family: 'Bebas Neue', cursive, !important;
     }
     
     #main-menu .nav-bar {
@@ -36,7 +37,7 @@
     }
     
     .txt {
-        padding-top: 50%;
+        padding-left: 50%, !important;
     }
     
     #page_co {
@@ -46,7 +47,7 @@
     
     #page_in {
         text-align: center;
-        padding-top: 10%;
+        padding-top: 5%;
     }
     
     img {
@@ -60,6 +61,7 @@
         border-bottom: solid black 2px;
     }
     
+<<<<<<< Updated upstream
     #titre {
         text-align: center;
         font-family: "The Wild Breath of Zelda";
@@ -68,4 +70,26 @@
     
     #titre h1 {
         margin-top: 5vh;
+=======
+    #ligne {
+        border-bottom: solid black 2px;
+        margin-top: 10vh;
+    }
+    
+    footer {
+        margin-top: 1%;
+    }
+    
+    .col-4 {
+        padding-left: auto;
+    }
+    
+    #ico {
+        width: auto;
+        height: auto;
+    }
+    
+    #user {
+        padding-left: 81%;
+>>>>>>> Stashed changes
     }
