@@ -66,6 +66,13 @@
     
     #ligne {
         border-bottom: solid black 2px;
+<<<<<<< HEAD
+>>>>>>> 3785d8f2b51c9126c066ee2a68f7c057f5aae862
+=======
+    }
+    
+    #ligne {
+        border-bottom: solid black 2px;
 >>>>>>> 3785d8f2b51c9126c066ee2a68f7c057f5aae862
         margin-top: 10vh;
     }
@@ -75,11 +82,17 @@
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3785d8f2b51c9126c066ee2a68f7c057f5aae862
     .col-4 {
         padding-left: auto;
     }
     
+<<<<<<< HEAD
+>>>>>>> 3785d8f2b51c9126c066ee2a68f7c057f5aae862
+=======
 >>>>>>> 3785d8f2b51c9126c066ee2a68f7c057f5aae862
     #ico {
         width: auto;
@@ -88,6 +101,7 @@
     
     #user {
         padding-left: 81%;
+<<<<<<< HEAD
 <<<<<<< HEAD
     }
     
@@ -104,6 +118,8 @@
     .row {
         padding-left: 5%;
         margin-top: 40%;
+=======
+>>>>>>> 3785d8f2b51c9126c066ee2a68f7c057f5aae862
 =======
 >>>>>>> 3785d8f2b51c9126c066ee2a68f7c057f5aae862
     }
