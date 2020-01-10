@@ -54,20 +54,17 @@
     }
     
     header {
-        border-bottom: solid black 2px;
+        margin-bottom: 10px;
     }
     
     #ligne {
+        border-top: solid black 2px;
         border-bottom: solid black 2px;
         margin-top: 10vh;
     }
     
     footer {
         margin-top: 1%;
-    }
-    
-    .col-4 {
-        padding-left: auto;
     }
     
     #ico {
@@ -87,4 +84,9 @@
     
     #titre h1 {
         margin-top: 5vh;
+    }
+    
+    .row {
+        padding-left: 5%;
+        margin-top: 40%;
     }
