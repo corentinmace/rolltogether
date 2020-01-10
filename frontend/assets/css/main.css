@@ -60,6 +60,13 @@
     #ligne {
         border-top: solid black 2px;
         border-bottom: solid black 2px;
+<<<<<<< HEAD
+=======
+    }
+    
+    #ligne {
+        border-bottom: solid black 2px;
+>>>>>>> 3785d8f2b51c9126c066ee2a68f7c057f5aae862
         margin-top: 10vh;
     }
     
@@ -67,6 +74,13 @@
         margin-top: 1%;
     }
     
+<<<<<<< HEAD
+=======
+    .col-4 {
+        padding-left: auto;
+    }
+    
+>>>>>>> 3785d8f2b51c9126c066ee2a68f7c057f5aae862
     #ico {
         width: auto;
         height: auto;
@@ -74,6 +88,7 @@
     
     #user {
         padding-left: 81%;
+<<<<<<< HEAD
     }
     
     #titre {
@@ -89,4 +104,6 @@
     .row {
         padding-left: 5%;
         margin-top: 40%;
+=======
+>>>>>>> 3785d8f2b51c9126c066ee2a68f7c057f5aae862
     }
