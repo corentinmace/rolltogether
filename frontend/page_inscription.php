@@ -14,8 +14,8 @@
 
 <header>
     <div id="logo">
-        <a href="index.html"><img src="assets/img/logo.png" alt="Accueil"></a>
-        <a id="user" href="user.html"><img src="https://img.icons8.com/ios-glyphs/64/000000/user--v1.png"></a>
+        <a href="index.php"><img src="assets/img/logo.png" alt="Accueil"></a>
+        <a id="user" href="user.ph"><img src="https://img.icons8.com/ios-glyphs/64/000000/user--v1.png"></a>
     </div>
 </header>
 
