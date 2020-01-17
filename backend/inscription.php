@@ -37,7 +37,7 @@ if(isset($_POST) && !empty($_POST)){ // Si le formulaire a été rempli
             {
               try{
                   $query->execute(); // On exécute la requête
-                  header("Location: ../frontend/page_connexion.html"); // On redirige vers la page de connexion
+                  header("Location: ../frontend/page_connexion.php"); // On redirige vers la page de connexion
                   // $query->exec();
                   // die(var_dump($query));
                   // die (var_dump($query));
