@@ -1,0 +1,3 @@
+<Files "db.ini>
+    Require all denied
+</Files>
