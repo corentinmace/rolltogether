@@ -11,7 +11,7 @@ if(isset($_POST) && !empty($_POST)){
         $connect = Database::getInstance();
         $connect->setIni("db.ini");
 
-        $query = $connect->query("SELECT id, password FROM user WHERE pseudo='" . $pseudo . "';")->fetch(); // On récupère le hash du mot de passe en database
+        $query = $connect->query("SELECT id, password FROM user WHERE pseudo='" . $pseudo . "' || email = '". $pseudo ."';")->fetch(); // On récupère le hash du mot de passe en database
 
         if(hash("SHA512", $mdp) === $query['password']){ // Si les deux correspondent
             session_start(); // On lance la session
