@@ -11,7 +11,12 @@
     body {
         font-family: 'Bebas Neue', cursive, !important;
     }
-    
+
+    #logo {
+        background-color : rgb(76, 30, 45);
+        min-height: 100px;
+    }
+
     #main-menu .nav-bar {
         list-style: none;
         margin-top: 40px;
@@ -51,58 +56,30 @@
     
     img {
         max-width: 250px;
+        margin: 1%;
     }
     
     header {
         margin-bottom: 10px;
     }
-    
-    #ligne {
-        border-top: solid black 2px;
-        border-bottom: solid black 2px;
-<<<<<<< HEAD
-=======
-    }
-    
-    #ligne {
-        border-bottom: solid black 2px;
-<<<<<<< HEAD
->>>>>>> 3785d8f2b51c9126c066ee2a68f7c057f5aae862
-=======
-    }
-    
-    #ligne {
-        border-bottom: solid black 2px;
->>>>>>> 3785d8f2b51c9126c066ee2a68f7c057f5aae862
-        margin-top: 10vh;
-    }
-    
+
     footer {
         margin-top: 1%;
     }
-    
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3785d8f2b51c9126c066ee2a68f7c057f5aae862
+
     .col-4 {
         padding-left: auto;
     }
-    
-<<<<<<< HEAD
->>>>>>> 3785d8f2b51c9126c066ee2a68f7c057f5aae862
-=======
->>>>>>> 3785d8f2b51c9126c066ee2a68f7c057f5aae862
+
     #ico {
         width: auto;
         height: auto;
     }
     
     #user {
-        padding-left: 81%;
-<<<<<<< HEAD
-<<<<<<< HEAD
+        position: fixed;
+        right: 5%;
+        top: 35px;
     }
     
     #titre {
@@ -118,8 +95,4 @@
     .row {
         padding-left: 5%;
         margin-top: 40%;
-=======
->>>>>>> 3785d8f2b51c9126c066ee2a68f7c057f5aae862
-=======
->>>>>>> 3785d8f2b51c9126c066ee2a68f7c057f5aae862
     }
