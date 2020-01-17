@@ -68,10 +68,17 @@
         height: auto;
     }
     
-    #user {
+    #dropdownMenuLink {
+        color: white;
+        background-color: rgb(76, 30, 45);
         position: absolute;
         right: 5%;
-        top: 35px;
+        top: -85px;
+    }
+
+    #dropdownUserMenu {
+        margin-right: 30px;
+        width: 80px;
     }
     
     #titre {
