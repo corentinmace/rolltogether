@@ -59,11 +59,6 @@
         margin: 1%;
     }
 
-
-    footer {
-        margin-top: 1%;
-    }
-
     .col-4 {
         padding-left: auto;
     }
@@ -90,6 +85,5 @@
     }
     
     .row {
-        padding-left: 5%;
-        margin-top: 40%;
+        padding: 0% 3% 2% 3%;
     }
