@@ -71,4 +71,12 @@ class Database{
     public function query($query){
         return $this->db->query($query);
     }
+
+    /**
+     * @param $q // La requête à effectuer
+     * @return mixed // Renvoie le résultat de la requête
+     */
+    public function prepare($query){
+        return $this->db->prepare($query);
+    }
 }

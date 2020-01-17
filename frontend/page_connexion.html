@@ -24,11 +24,11 @@
         <h1>Connexion au compte</h1>
     </div>
     <div id="form">
-        <form action='connexion.php' method='POST'>
-            <label class="txt">Pseudo</label> : <br>
-            <input name='pseudo' type='text' placeholder="Pseudo"> <br>
-            <label class="txt">Mot de passe</label> : <br>
-            <input name='mail' type='password' placeholder="Mot de passe"> <br>
+        <form action='../backend/connexion.php' method='POST'>
+            <label class="txt" for="pseudo">Pseudo</label> : <br>
+            <input id="pseudo" name='pseudo' type='text' placeholder="Pseudo"> <br>
+            <label class="txt" for="mdp">Mot de passe</label> : <br>
+            <input id="mdp" name='mdp' type='password' placeholder="Mot de passe"> <br>
             <button type="submit" class="button" id="form-submit">Connexion</button>
         </form>
     </div>
