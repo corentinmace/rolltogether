@@ -77,7 +77,7 @@
     }
     
     #user {
-        position: fixed;
+        position: absolute;
         right: 5%;
         top: 35px;
     }
