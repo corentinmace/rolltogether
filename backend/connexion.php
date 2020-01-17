@@ -20,7 +20,7 @@ if(isset($_POST) && !empty($_POST)){
             die(var_dump($_SESSION));
             header("Location: ../frontend/user.html"); // On redirige vers la page utilisateur
         }else{
-            return "Les identifiants sont incorrects !";
+            echo "Les identifiants sont incorrects !";
         }
     }
 }
