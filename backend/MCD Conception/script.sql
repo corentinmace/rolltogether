@@ -2,7 +2,11 @@
 #        Script MySQL.
 #------------------------------------------------------------
 
+DROP DATABASE IF EXISTS rolltogether;
 
+CREATE DATABASE rolltogether;
+
+use rolltogether;
 #------------------------------------------------------------
 # Table: User
 #------------------------------------------------------------
@@ -14,7 +18,8 @@ CREATE TABLE User(
         Email    Varchar (60) NOT NULL ,
         Nom      Varchar (32) ,
         Prenom   Varchar (32) ,
-        Photo    Blob
+        Photo    Blob ,
+        VerifMail BOOLEAN
 	,CONSTRAINT User_PK PRIMARY KEY (Id)
 )ENGINE=InnoDB;
 
@@ -64,7 +69,5 @@ CREATE TABLE Sauvegarde(
         Chemin    Varchar (50) NOT NULL ,
         Id_Partie Int NOT NULL
 	,CONSTRAINT Sauvegarde_PK PRIMARY KEY (Id)
-
 	,CONSTRAINT Sauvegarde_Partie_FK FOREIGN KEY (Id_Partie) REFERENCES Partie(Id)
 )ENGINE=InnoDB;
-

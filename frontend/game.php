@@ -15,10 +15,10 @@
 <header>
     <nav id="main-menu">
         <ul class="nav-bar">
-            <li class="nav-button-game"><a href="game.html">JOUER</a></li>
-            <li class="nav-button-biblio"><a href="biblio.html">BIBLIOTHEQUE</a></li>
-            <li class="nav-button-shop"><a href="shop.html">BOUTIQUE</a></li>
-            <li class="nav-button-user"><a href="user.html">ESPACE UTILISATEUR</a></li>
+            <li class="nav-button-game"><a href="game.php">JOUER</a></li>
+            <li class="nav-button-biblio"><a href="biblio.php">BIBLIOTHEQUE</a></li>
+            <li class="nav-button-shop"><a href="shop.php">BOUTIQUE</a></li>
+            <li class="nav-button-user"><a href="user.php">ESPACE UTILISATEUR</a></li>
         </ul>
     </nav>
 </header>
