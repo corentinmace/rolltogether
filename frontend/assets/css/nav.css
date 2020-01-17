@@ -1,9 +1,10 @@
 #navigation-r2 {
     margin-bottom: 20px;
+    padding-left: 15px;
 }
 
 .nav-r2 {
-    color:  rgb(76, 30, 45);
+    color:  rgb(100, 30, 45);
     font-weight: 500;
     font-kerning: none;
 }
