@@ -1,7 +1,9 @@
+    <script src="../node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+
 
 <header>
     <div id="logo">
-        <a href="index.php"><img src="assets/img/logo.png" alt="Accueil"></a>
-        <a id="user" href="user.php"><img src="https://img.icons8.com/ios-glyphs/64/000000/user--v1.png"></a>
+        <a href="index.php"><img src="assets/img/logo_blanc.png" alt="Accueil"></a>
+        <a id="user" href="user.php" style="color: white"><i class="fas fa-user fa-2x"></i></a>
     </div>
 </header>
