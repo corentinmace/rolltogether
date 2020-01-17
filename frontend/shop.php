@@ -12,20 +12,9 @@
     <title>Boutique</title>
 </head>
 
-<header>
-    <div id="logo">
-        <a href="index.php"><img src="assets/img/logo.png" alt="Accueil"></a>
-        <a id="user" href="user.html"><img src="https://img.icons8.com/ios-glyphs/64/000000/user--v1.png"></a>
-    </div>
-    <nav id="main-menu">
-        <ul class="nav-bar">
-            <li class="nav-button-game"><a href="game.php">JOUER</a></li>
-            <li class="nav-button-biblio"><a href="biblio.php">BIBLIOTHEQUE</a></li>
-            <li class="nav-button-shop"><a href="shop.php">BOUTIQUE</a></li>
-            <li class="nav-button-user"><a href="user.php">ESPACE UTILISATEUR</a></li>
-        </ul>
-    </nav>
-</header>
+<?php
+    include("header.php");
+?>
 
 <body>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloribus reprehenderit, commodi autem omnis quia quas aperiam amet eligendi, optio beatae id, accusamus eaque voluptas deserunt nisi quibusdam. Natus, quam!

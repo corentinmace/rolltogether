@@ -12,29 +12,15 @@
     <title>Espace utilisateur</title>
 </head>
 
-<header>
-    <div id="logo">
-        <a href="index.html"><img src="assets/img/logo.png" alt="Accueil"></a>
-        <a id="user" href="user.html"><img src="https://img.icons8.com/ios-glyphs/64/000000/user--v1.png"></a>
-    </div>
-    <nav id="main-menu">
-        <ul class="nav-bar">
-            <!-- <div class="row"> -->
-            <li class="nav-button-game"><a href="game.html">JOUER</a></li>
-            <li class="nav-button-biblio"><a href="biblio.html">BIBLIOTHEQUE</a></li>
-            <li class="nav-button-shop"><a href="shop.html">BOUTIQUE</a></li>
-            <li class="nav-button-user"><a href="user.html">ESPACE UTILISATEUR</a></li>
-            </div>
-        </ul>
-    </nav>
-    <div id="ligne">
-    </div>
-</header>
+<?php
+    include("header.php");
+    include("nav.php");
+?>
 
 <body>
     <div id="button-co">
-        <button><a href="page_inscription.html">S'inscrire</a></button>
-        <button><a href="page_connexion.html">Se connecter</a></button>
+        <button><a href="page_inscription.php">S'inscrire</a></button>
+        <button><a href="page_connexion.php">Se connecter</a></button>
     </div>
     <div id="ligne">
     </div>
