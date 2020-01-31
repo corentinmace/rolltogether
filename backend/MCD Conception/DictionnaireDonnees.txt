@@ -102,3 +102,27 @@ Type : INT
 Taille : ,
 Commentaire : 
 
+Nom : Nb_joueurs_max
+Code : NB_JOUEURS_MAX
+Type : INT
+Taille : 10,
+Commentaire : 
+
+Nom : token
+Code : TOKEN
+Type : VARCHAR
+Taille : 255,
+Commentaire : 
+
+Nom : email_verif
+Code : EMAIL_VERIF
+Type : BOOL
+Taille : ,
+Commentaire : 
+
+Nom : VerifMail
+Code : EMAIL_VERIF
+Type : BOOL
+Taille : ,
+Commentaire : 
+

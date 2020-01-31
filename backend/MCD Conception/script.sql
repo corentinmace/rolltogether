@@ -2,24 +2,20 @@
 #        Script MySQL.
 #------------------------------------------------------------
 
-DROP DATABASE IF EXISTS rolltogether;
 
-CREATE DATABASE rolltogether;
-
-use rolltogether;
 #------------------------------------------------------------
 # Table: User
 #------------------------------------------------------------
 
 CREATE TABLE User(
-        Id       Int  Auto_increment  NOT NULL ,
-        Pseudo   Varchar (32) NOT NULL ,
-        Password Varchar (255) NOT NULL ,
-        Email    Varchar (60) NOT NULL ,
-        Nom      Varchar (32) ,
-        Prenom   Varchar (32) ,
-        Photo    Blob ,
-        VerifMail BOOLEAN
+        Id        Int  Auto_increment  NOT NULL ,
+        Pseudo    Varchar (32) NOT NULL ,
+        Password  Varchar (32) NOT NULL ,
+        Email     Varchar (60) NOT NULL ,
+        Nom       Varchar (32) ,
+        Prenom    Varchar (32) ,
+        Photo     Blob ,
+        VerifMail Bool NOT NULL
 	,CONSTRAINT User_PK PRIMARY KEY (Id)
 )ENGINE=InnoDB;
 
@@ -69,5 +65,36 @@ CREATE TABLE Sauvegarde(
         Chemin    Varchar (50) NOT NULL ,
         Id_Partie Int NOT NULL
 	,CONSTRAINT Sauvegarde_PK PRIMARY KEY (Id)
+
 	,CONSTRAINT Sauvegarde_Partie_FK FOREIGN KEY (Id_Partie) REFERENCES Partie(Id)
 )ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Room
+#------------------------------------------------------------
+
+CREATE TABLE Room(
+        Id             Int  Auto_increment  NOT NULL ,
+        Nb_joueurs_max Int NOT NULL ,
+        Token          Varchar (255) NOT NULL ,
+        Id_User        Int NOT NULL
+	,CONSTRAINT Room_PK PRIMARY KEY (Id)
+
+	,CONSTRAINT Room_User_FK FOREIGN KEY (Id_User) REFERENCES User(Id)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Amis
+#------------------------------------------------------------
+
+CREATE TABLE Amis(
+        Id      Int NOT NULL ,
+        Id_User Int NOT NULL
+	,CONSTRAINT Amis_PK PRIMARY KEY (Id,Id_User)
+
+	,CONSTRAINT Amis_User_FK FOREIGN KEY (Id) REFERENCES User(Id)
+	,CONSTRAINT Amis_User0_FK FOREIGN KEY (Id_User) REFERENCES User(Id)
+)ENGINE=InnoDB;
+

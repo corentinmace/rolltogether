@@ -1,0 +1,170 @@
+[33mcommit e1e36f1a59641563064577fabdda7e06128ef6cb[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: 5884046 7cbd331
+Author: Eschyle <francois.caillat@viacesi.fr>
+Date:   Fri Jan 17 13:11:42 2020 +0100
+
+    Merge branch 'master' of https://github.com/corentinmace/rolltogether
+
+[33mcommit 58840461fce92315526f92605dde7214f3322c3d[m
+Author: Eschyle <francois.caillat@viacesi.fr>
+Date:   Fri Jan 17 13:10:46 2020 +0100
+
+    UPDATE request connexion
+
+[33mcommit 7cbd331333bb9360f4b35117fa6656b3c6a96a67[m
+Author: Godardx <thomas.godard13@ynov.com>
+Date:   Fri Jan 17 11:48:34 2020 +0100
+
+    UPDATE - page d'inscription
+
+[33mcommit 7235ce7824c164c741f0e2b71c771ab77a40d44b[m
+Author: Corentin Mace <corentin.mace@ynov.com>
+Date:   Fri Jan 17 10:41:47 2020 +0100
+
+    UPDATE - updated connexion and singup headers
+
+[33mcommit 935eda248ff0581649fb94f33d7a68fc3145cf08[m
+Author: Corentin Mace <corentin.mace@ynov.com>
+Date:   Fri Jan 17 10:26:47 2020 +0100
+
+    UPDATE - updated from return to echo
+
+[33mcommit 46fbd13bb9fcb7cfa8153b05c17fe65dba2983ee[m
+Author: Corentin Mace <corentin.mace@ynov.com>
+Date:   Fri Jan 17 10:26:04 2020 +0100
+
+    UPDATE - updating table user to add verifmail
+
+[33mcommit 84d955d66c3ed998600e903705f2ca4723108d33[m
+Author: Godardx <thomas.godard13@ynov.com>
+Date:   Fri Jan 17 10:22:18 2020 +0100
+
+    UPDATE : .HTML -> .PHP V2
+
+[33mcommit dd9b93a6357d0bae05c14b73870e9804c09e17d6[m
+Author: Godardx <thomas.godard13@ynov.com>
+Date:   Fri Jan 17 10:17:51 2020 +0100
+
+    UPFDATE : .HTML -> .PHP
+
+[33mcommit 175e357c45713ce7bb85ea62e19418d19a6ddad6[m
+Author: corenitnmace <corentin.mace@ynov.com>
+Date:   Fri Jan 10 16:53:43 2020 +0100
+
+    ADD - Connect & Signup (backend) Verif if user exists
+
+[33mcommit 58d765edd50ab75941cc339e5d25f7eb5af5f5ac[m
+Author: corenitnmace <corentin.mace@ynov.com>
+Date:   Fri Jan 10 16:52:47 2020 +0100
+
+    UPDATE - Moved Database.php into backend
+
+[33mcommit c8d4ccb1f7eb20eb512a1f11018e2cb151911aee[m
+Author: corenitnmace <corentin.mace@ynov.com>
+Date:   Fri Jan 10 14:13:48 2020 +0100
+
+    Inscription ok
+
+[33mcommit edce8cee5294511f52397e4f4e11d0b10154bf93[m
+Author: Godardx <thomas.godard13@ynov.com>
+Date:   Fri Jan 10 11:07:45 2020 +0100
+
+    qlq amélioration css
+
+[33mcommit daf76845dbe95b6a859043e17ad036e2135ac7e4[m
+Author: Godardx <thomas.godard13@ynov.com>
+Date:   Fri Dec 20 17:36:39 2019 +0100
+
+    début css v.1.1
+
+[33mcommit f2cd6aea6aa966f958eea2add0c6b1ddc85e6170[m
+Author: corenitnmace <corentin.mace@ynov.com>
+Date:   Fri Dec 20 16:32:01 2019 +0100
+
+    Ajout partie BDD
+
+[33mcommit e0bf5041f7b77a573c7e6150ee89426aa5795ea3[m
+Author: Godardx <thomas.godard13@ynov.com>
+Date:   Fri Dec 20 13:45:11 2019 +0100
+
+    boostrap
+
+[33mcommit e894283a28926ba900bdb383eb883314fce53dd6[m
+Author: corenitnmace <corentin.mace@ynov.com>
+Date:   Fri Dec 20 11:46:36 2019 +0100
+
+    Système de room
+
+[33mcommit 0fccd2cdf0c14380e6b77ba47427beeab770dd17[m
+Merge: 4bb5146 ed41858
+Author: Olivier Gisselmann <olivier.gisselmann@ynov.com>
+Date:   Fri Dec 6 15:18:50 2019 +0100
+
+    Merge branch 'master' of https://github.com/corentinmace/rolltogether
+
+[33mcommit 4bb5146807e99b00ee69fea98bd4a2dd1d1a4558[m
+Author: Olivier Gisselmann <olivier.gisselmann@ynov.com>
+Date:   Fri Dec 6 15:13:18 2019 +0100
+
+    Ajout de l'inscription et connexion et  du fichier ini lié à la database
+
+[33mcommit ed4185827c92b3dd3f4db73ebb2a3e38875076fd[m
+Author: ToufikLaKalash <43669775+ToufikLaKalash@users.noreply.github.com>
+Date:   Fri Dec 6 14:57:58 2019 +0100
+
+    Changement du format de mot de passe pour correspondre à un hash
+
+[33mcommit 9433fe272c32a41a5a9ad8cc6c7739701ef9dc47[m
+Merge: c391630 76b3e01
+Author: Olivier Gisselmann <olivier.gisselmann@ynov.com>
+Date:   Fri Dec 6 14:35:38 2019 +0100
+
+    Merge branch 'backend' of https://github.com/corentinmace/rolltogether
+
+[33mcommit c391630f0901e38735cd4e7e3d32bdec758c7f89[m
+Author: Godardx <thomas.godard13@ynov.com>
+Date:   Fri Dec 6 14:17:02 2019 +0100
+
+    co et sub
+
+[33mcommit 167d68e461ad8374819746a864a48403f2963c0a[m
+Author: Godardx <thomas.godard13@ynov.com>
+Date:   Fri Dec 6 14:04:36 2019 +0100
+
+    Début du site
+
+[33mcommit e3df08c2aa9e87278a32d0e133d5019d7fa21ebe[m
+Author: corenitnmace <corentin.mace@ynov.com>
+Date:   Fri Nov 8 17:04:03 2019 +0100
+
+    Conception v2
+
+[33mcommit 7bcfc9bc2d52c4155b3310a9ab845663176f24aa[m
+Author: corenitnmace <corentin.mace@ynov.com>
+Date:   Fri Nov 8 15:39:00 2019 +0100
+
+    Conception v2
+
+[33mcommit 3f66893319edbd980c7f71022e10ffa24c4552f0[m
+Author: corenitnmace <corentin.mace@ynov.com>
+Date:   Fri Nov 8 15:37:07 2019 +0100
+
+    Conception fix
+
+[33mcommit bc1e3dae2bd21e0635f64c470f9e69a3fb66904f[m
+Author: corenitnmace <corentin.mace@ynov.com>
+Date:   Fri Nov 8 15:33:04 2019 +0100
+
+    Conception Back v2
+
+[33mcommit 76b3e015731880dcad656e431602c2b0f4ffa4bc[m[33m ([m[1;31morigin/backend[m[33m)[m
+Author: corenitnmace <corentin.mace@ynov.com>
+Date:   Fri Nov 8 15:10:42 2019 +0100
+
+    Conception backend
+
+[33mcommit d03fbbad3c7c5e3450e672a7ba46257a66f154ec[m
+Author: corenitnmace <corentin.mace@ynov.com>
+Date:   Fri Oct 18 09:57:02 2019 +0200
+
+    README
