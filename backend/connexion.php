@@ -17,8 +17,7 @@ if(isset($_POST) && !empty($_POST)){
             session_start(); // On lance la session
             $_SESSION['pseudo'] = $pseudo; // On stocke le pseudo en session
             $_SESSION['id'] = $query['id']; // On stocke le pseudo en session
-            die(var_dump($_SESSION));
-            header("Location: ../frontend/user.html"); // On redirige vers la page utilisateur
+            header("Location: ../frontend/user.php"); // On redirige vers la page utilisateur
         }else{
             echo "Les identifiants sont incorrects !";
         }
