@@ -187,23 +187,46 @@
     .slider.round:before {
         border-radius: 50%;
     }
-    
+
     #contenu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+      margin: auto;
     }
 
-    #text {
-        width: 20%;
-        height: 50%;
-        float: left;
+    #contenu__top {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
 
-    #chat {
-        float: right;
+    #contenu__text {
+      min-width: 15%;
+      max-width: 15%;
+    }
+    #contenu__chat {
+      display: inline-flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      min-width: 15%;
+      max-width: 15%;
     }
 
+    #contenu__diapos {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: space-around;
+      min-width: 60%;
+    }
+
+    #contenu__diapos__mini-diapos {
+      min-height: 20%;
+    }
+
+    #contenu__diapos__selected {
+      min-height: 75%;
+    }
     .content {
         border: 1px solid black;
     }

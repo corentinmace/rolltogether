@@ -30,6 +30,8 @@
     </header>
     <main>
         <div id="contenu">
+          <div id="contenu__top">
+
             <div id="contenu__text" class="content">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eaque quidem est sed totam praesentium voluptates odit, beatae officia minus molestias porro aperiam ea repellat fuga cum eligendi laudantium? Numquam.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eaque quidem est sed totam praesentium voluptates odit, beatae officia minus molestias porro aperiam ea repellat fuga cum eligendi laudantium? Numquam.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eaque quidem est sed totam praesentium voluptates odit, beatae officia minus molestias porro aperiam ea repellat fuga cum eligendi laudantium? Numquam.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eaque quidem est sed totam praesentium voluptates odit, beatae officia minus molestias porro aperiam ea repellat fuga cum eligendi laudantium? Numquam.</p>
             </div>
@@ -37,9 +39,15 @@
                 <div id="contenu__diapos__mini-diapos" class="content">Lorem ipsum dolor</div>
                 <div id="contenu__diapos__selected" class="content">Lorem ipsum dolor</div>
             </div>
-            <div id="contenu__chat" class="content">Lorem ipsum dolor</div>
-            <div id="contenu__music" class="content">Lorem ipsum dolor</div>
+            <div id="contenu__chat" class="content">
+              <input type="text" name="" value="">
+            </div>
+
         </div>
+        <div id="contenu__bottom">
+          <div id="contenu__music" class="content">Lorem ipsum dolor</div>
+        </div>
+      </div>
         <div id="ligne">
         </div>
     </main>
