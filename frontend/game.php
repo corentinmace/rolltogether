@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/js/main.js">
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Jouer</title>
 </head>
@@ -29,26 +29,30 @@
   </header>
   <main>
   <div id="param">
-        <div id="form">
-            <form action='#.php' method='POST'>
-                <label class="txt" for="nom">Nom de la partie</label> : <br>
-                <input name='nom' id="nom" type='text' placeholder="Nom"> <br>
-                Partie Privée
+
+            <form action='#.php' method='POST' id="form">
+                <label class="txt" for="nom">Nom de la partie :</label>
+                <input name='nom' id="nom" type='text' placeholder="Nom">
+                <div id="switch">
+                  <p>Partie publique</p>
                 <label class="switch">
                     <input type="checkbox" checked>
                     <span class="slider round"></span>
                 </label>
-                Partie Publique <br>
+                <p>Partie privée</p>
+              </div>
                 <label for="scenar">Choisissez un scénario :</label>
                 <select id="cars" name="cars">
                     <option value="volvo">Scénar 1</option>
                     <option value="saab">Scénar 2</option>
                     <option value="fiat">Scénar 3</option>
-                </select> <br>
-                Votre lien d'invitation : sdfgrts5445rtg5rt84gregz<br>
+                </select>
+                <div id="switch">
+                  <p>Votre lien d'invitation :</p>
+                  <a href="#">esdt'(et'grvrtgerdggr)</a>
+                </div>
                 <button type="submit" class="button" id="form-submit">Lancer la partie</button>
             </form>
-        </div>
     </div>
   </main>
   <footer>
