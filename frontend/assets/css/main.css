@@ -161,3 +161,23 @@
     .slider.round:before {
         border-radius: 50%;
     }
+    
+    #contenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #text {
+        width: 20%;
+        height: 50%;
+        float: left;
+    }
+    
+    #chat {
+        float: right;
+    }
+    
+    .content {
+        border: 1px solid black;
+    }
