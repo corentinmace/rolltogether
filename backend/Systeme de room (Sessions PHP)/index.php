@@ -1,6 +1,6 @@
 <?php
 
-  require "Database.php";
+  require "../Database.php";
 
 function generateRandomString($length = 25) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -20,8 +20,10 @@ function createSession() {
   $_SESSION['data'] = time();
 
   echo("<script>console.log('DATA :".$_SESSION['data']." ID : ".session_id()." NAME : ".session_name()."')</script>");
+  echo "<p>Nom de la salle : ".$_SESSION['nom']."";
 
-  echo '<a href=index.php?id='.session_id().'>Inviter dans la partie</a>';
+
+  echo '<a target="_blank" href=index.php?id='.session_id().'>Inviter dans la partie</a>';
 
   echo '<p>Salle : '.session_id().'</p>';
 

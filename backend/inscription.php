@@ -14,18 +14,18 @@ if(isset($_POST) && !empty($_POST)){ // Si le formulaire a été rempli
         $connect = Database::getInstance();
         $connect->setIni("db.ini");
 
-        $verif = $connect->prepare("SELECT Pseudo, Email FROM user WHERE Pseudo = :pseudo OR Email = :email");
+        $verif = $connect->prepare("SELECT Pseudo, Email FROM User WHERE Pseudo = :pseudo OR Email = :email");
         $verif->bindParam(":pseudo", $pseudo);
         $verif->bindParam(":email", $email);
         $verif->execute();
 
         $res = $verif->fetchAll();
 
-        // die(var_dump($res));
+         //die(var_dump($res));
 
         if (empty($res) || $res === 0 || $res === null || $res === false) {
 
-          $query = $connect->prepare("INSERT INTO user(Pseudo, Password, Email, Nom, Prenom) VALUES(:pseudo, :password, :email, :nom, :prenom);"); // On prépare la requête
+          $query = $connect->prepare("INSERT INTO User(Pseudo, Password, Email, Nom, Prenom) VALUES(:pseudo, :password, :email, :nom, :prenom);"); // On prépare la requête
           /* On insère les variables dans la requête */
           $query->bindParam(":pseudo", $pseudo);
           $query->bindParam(":password", $hashedMdp); // On hash le mot de passe pour ne pas le stocker en clair dans la database
@@ -37,9 +37,8 @@ if(isset($_POST) && !empty($_POST)){ // Si le formulaire a été rempli
             {
               try{
                   $query->execute(); // On exécute la requête
+
                   header("Location: ../frontend/page_connexion.php"); // On redirige vers la page de connexion
-                  // $query->exec();
-                  // die(var_dump($query));
                   // die (var_dump($query));
                 }catch (Error $error){ // S'il y a une erreur
                     echo "Erreur: " . $error; // On l'affiche
