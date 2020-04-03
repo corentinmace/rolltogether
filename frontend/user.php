@@ -13,12 +13,9 @@
 </head>
 <body>
   <header>
-    <div class="header-banner">
+  <div class="header-banner">
       <a href="index.php"><img src="assets/img/logo.png" alt="Accueil"></a>
-      <a id="user" href="user.php"><img src="https://img.icons8.com/ios-glyphs/64/000000/user--v1.png"></a>
-    </div>
-    <div id="logo">
-
+      <a href="user.php"><img id="user" src="https://img.icons8.com/ios-glyphs/64/000000/user--v1.png"></a>
     </div>
     <nav id="main-menu">
       <ul class="nav-bar">
