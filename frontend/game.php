@@ -28,7 +28,28 @@
       </nav>
   </header>
   <main>
-
+  <div id="param">
+        <div id="form">
+            <form action='#.php' method='POST'>
+                <label class="txt" for="nom">Nom de la partie</label> : <br>
+                <input name='nom' id="nom" type='text' placeholder="Nom"> <br>
+                Partie Privée
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                Partie Publique <br>
+                <label for="scenar">Choisissez un scénario :</label>
+                <select id="cars" name="cars">
+                    <option value="volvo">Scénar 1</option>
+                    <option value="saab">Scénar 2</option>
+                    <option value="fiat">Scénar 3</option>
+                </select> <br>
+                Votre lien d'invitation : sdfgrts5445rtg5rt84gregz<br>
+                <button type="submit" class="button" id="form-submit">Lancer la partie</button>
+            </form>
+        </div>
+    </div>
   </main>
   <footer>
 
