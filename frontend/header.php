@@ -1,4 +1,4 @@
-<script src="../node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+<script src="assets/fontawesome-free/js/all.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -6,7 +6,7 @@
 
 <header>
     <div id="logo">
-        <a href="index.php"><img src="assets/img/logo_blanc.png" alt="Accueil"></a>
+        <a href="index.php"><img src="assets/img/logo.png" alt="Accueil"></a>
 
         <div class="dropdown">
             <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
