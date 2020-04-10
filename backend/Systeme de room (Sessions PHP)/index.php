@@ -20,8 +20,6 @@ function createSession() {
   $_SESSION['data'] = time();
 
   echo("<script>console.log('DATA :".$_SESSION['data']." ID : ".session_id()." NAME : ".session_name()."')</script>");
-  echo "<p>Nom de la salle : ".$_SESSION['nom']."";
-
 
   echo '<a target="_blank" href=index.php?id='.session_id().'>Inviter dans la partie</a>';
 

@@ -48,6 +48,20 @@
       </div>
         <div id="ligne">
         </div>
+
+        <?php
+        if(session_status() !== PHP_SESSION_ACTIVE) {
+          session_start();
+        }
+          echo '<a target="_blank" href=partie.php?id='.session_id().'>Inviter dans la partie</a>';
+        echo '<p>Salle : '.session_id().'</p>';
+        // if (isset($_GET['id'])) {
+        //   session_id($_GET['id']);
+        //
+        //     echo '<p>Salle : '.session_id().'</p>';
+        //
+        // }
+         ?>
     </main>
     <footer>
         <div class="container">

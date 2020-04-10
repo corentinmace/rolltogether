@@ -25,7 +25,7 @@ if(isset($_POST) && !empty($_POST)){ // Si le formulaire a été rempli
 
         if (empty($res) || $res === 0 || $res === null || $res === false) {
 
-          $query = $connect->prepare("INSERT INTO User(Pseudo, Password, Email, Nom, Prenom) VALUES(:pseudo, :password, :email, :nom, :prenom);"); // On prépare la requête
+          $query = $connect->prepare("INSERT INTO User(Pseudo, Password, Email, Nom, Prenom, VerifMail) VALUES(:pseudo, :password, :email, :nom, :prenom, 0);"); // On prépare la requête
           /* On insère les variables dans la requête */
           $query->bindParam(":pseudo", $pseudo);
           $query->bindParam(":password", $hashedMdp); // On hash le mot de passe pour ne pas le stocker en clair dans la database
@@ -37,10 +37,8 @@ if(isset($_POST) && !empty($_POST)){ // Si le formulaire a été rempli
             {
               try{
                   $query->execute(); // On exécute la requête
-
                   header("Location: ../frontend/page_connexion.php"); // On redirige vers la page de connexion
-                  // die (var_dump($query));
-                }catch (Error $error){ // S'il y a une erreur
+              } catch(Exception $error){
                     echo "Erreur: " . $error; // On l'affiche
                 }
             } else {

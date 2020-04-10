@@ -28,13 +28,13 @@
   <main>
   <div id="param">
 
-            <form action='#.php' method='POST' id="form">
+            <form action='../backend/create_game.php' method='POST' id="form">
                 <label class="txt" for="nom">Nom de la partie :</label>
                 <input name='nom' id="nom" type='text' placeholder="Nom">
                 <div id="switch">
                   <p>Partie publique</p>
                 <label class="switch">
-                    <input type="checkbox" checked>
+                    <input name="visible" type="checkbox" checked>
                     <span class="slider round"></span>
                 </label>
                 <p>Partie privée</p>
@@ -45,11 +45,7 @@
                     <option value="saab">Scénar 2</option>
                     <option value="fiat">Scénar 3</option>
                 </select>
-                <div id="switch">
-                  <p>Votre lien d'invitation :</p>
-                  <a href="#">esdt'(et'grvrtgerdggr)</a>
-                </div>
-                <button type="submit" class="button" id="form-submit">Lancer la partie</button>
+                <button type="submit" name="button" class="button" id="form-submit">Lancer la partie</button>
             </form>
     </div>
   </main>
