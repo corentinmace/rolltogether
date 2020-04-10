@@ -2,7 +2,9 @@
 #        Script MySQL.
 #------------------------------------------------------------
 
-
+drop database if exists rolltogether;
+create database rolltogether;
+use rolltogether;
 #------------------------------------------------------------
 # Table: User
 #------------------------------------------------------------
@@ -10,7 +12,7 @@
 CREATE TABLE User(
         Id        Int  Auto_increment  NOT NULL ,
         Pseudo    Varchar (32) NOT NULL ,
-        Password  Varchar (32) NOT NULL ,
+        Password  Varchar (255) NOT NULL ,
         Email     Varchar (60) NOT NULL ,
         Nom       Varchar (32) ,
         Prenom    Varchar (32) ,
@@ -26,7 +28,6 @@ CREATE TABLE User(
 
 CREATE TABLE Scenario(
         Id          Int  Auto_increment  NOT NULL ,
-        Chemin      Varchar (60) NOT NULL ,
         Nom         Varchar (60) NOT NULL ,
         Note        TinyINT NOT NULL ,
         Description Varchar (500) NOT NULL ,
@@ -71,17 +72,32 @@ CREATE TABLE Sauvegarde(
 
 
 #------------------------------------------------------------
-# Table: Room
+# Table: Diapositives
 #------------------------------------------------------------
 
-CREATE TABLE Room(
-        Id             Int  Auto_increment  NOT NULL ,
-        Nb_joueurs_max Int NOT NULL ,
-        Token          Varchar (255) NOT NULL ,
-        Id_User        Int NOT NULL
-	,CONSTRAINT Room_PK PRIMARY KEY (Id)
+CREATE TABLE Diapositives(
+        Numero     Int  Auto_increment  NOT NULL ,
+        Text       Varchar (255) ,
+        Background Blob NOT NULL ,
+        Music      Varchar (255) ,
+        Fog        Bool NOT NULL ,
+        Id         Int NOT NULL
+	,CONSTRAINT Diapositives_PK PRIMARY KEY (Numero)
 
-	,CONSTRAINT Room_User_FK FOREIGN KEY (Id_User) REFERENCES User(Id)
+	,CONSTRAINT Diapositives_Scenario_FK FOREIGN KEY (Id) REFERENCES Scenario(Id)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Token
+#------------------------------------------------------------
+
+CREATE TABLE Token(
+        id_token   Int  Auto_increment  NOT NULL ,
+        Img        Blob NOT NULL ,
+        PlacementX Int NOT NULL ,
+        PlacementY Int NOT NULL
+	,CONSTRAINT Token_PK PRIMARY KEY (id_token)
 )ENGINE=InnoDB;
 
 
@@ -98,3 +114,16 @@ CREATE TABLE Amis(
 	,CONSTRAINT Amis_User0_FK FOREIGN KEY (Id_User) REFERENCES User(Id)
 )ENGINE=InnoDB;
 
+
+#------------------------------------------------------------
+# Table: contenir
+#------------------------------------------------------------
+
+CREATE TABLE contenir(
+        id_token Int NOT NULL ,
+        Numero   Int NOT NULL
+	,CONSTRAINT contenir_PK PRIMARY KEY (id_token,Numero)
+
+	,CONSTRAINT contenir_Token_FK FOREIGN KEY (id_token) REFERENCES Token(id_token)
+	,CONSTRAINT contenir_Diapositives0_FK FOREIGN KEY (Numero) REFERENCES Diapositives(Numero)
+)ENGINE=InnoDB;

@@ -22,6 +22,30 @@
 
 <body>
 
+<<<<<<< HEAD
+            <form action='../backend/create_game.php' method='POST' id="form">
+                <label class="txt" for="nom">Nom de la partie :</label>
+                <input name='nom' id="nom" type='text' placeholder="Nom">
+                <div id="switch">
+                  <p>Partie publique</p>
+                <label class="switch">
+                    <input name="visible" type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                <p>Partie privée</p>
+              </div>
+                <label for="scenar">Choisissez un scénario :</label>
+                <select id="cars" name="cars">
+                    <option value="volvo">Scénar 1</option>
+                    <option value="saab">Scénar 2</option>
+                    <option value="fiat">Scénar 3</option>
+                </select>
+                <button type="submit" name="button" class="button" id="form-submit">Lancer la partie</button>
+            </form>
+    </div>
+  </main>
+  <footer>
+=======
 <?php
 include("header.php");
 include("nav.php");
@@ -34,6 +58,7 @@ include("nav.php");
 <?php
 include("footer.php");
 ?>
+>>>>>>> d51ee09743910cfe60aeef763162ae5fe4302a83
 
 </body>
 

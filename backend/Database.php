@@ -58,7 +58,9 @@ class Database{
         }
 
         try{
-            $this->db = new PDO($this->getIniData()['dbname'], $this->getIniData()['user'], $this->getIniData()['password']); // On se connecte à la database
+            $this->db = new PDO($this->getIniData()['dbname'], $this->getIniData()['user'], $this->getIniData()['password']);
+             // On se connecte à la database
+            $this->db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
         }catch(PDOException $e){
             echo "Erreur lors de la connexion à la BDD: " . $e->getMessage(); // On affiche l'erreur
         }
