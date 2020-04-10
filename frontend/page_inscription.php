@@ -28,19 +28,21 @@
     <h1>Création de compte</h1>
 </div>
 <div id="form">
-    <form action='../backend/inscription.php' method='POST'>
-        <label class="txt" for="nom">Nom</label> : <br>
-        <input name='nom' id="nom" type='text' placeholder="Nom"> <br>
-        <label class="txt" for="prenom">Prénom</label> : <br>
-        <input name='prenom' id="prenom" type='text' placeholder="Prénom"> <br>
-        <label class="txt" for="pseudo">Pseudo</label> : <br>
-        <input name='pseudo' id="pseudo" type='text' placeholder="Pseudo"> <br>
-        <label class="txt" for="email">Mail</label> : <br>
-        <input name='email' id="email" type='mail' placeholder="Mail"> <br>
-        <label class="txt" for="mdp">Mot de passe</label> : <br>
-        <input name='mdp' id="mdp" type='password' placeholder="Mot de passe"> <br>
-        <br>
-        <button type="submit" class="button" id="form-submit">S'inscrire</button>
+    <form action="../backend/inscription.php" method="POST">
+        <div class="form-group col-md-6 col-lg-6 offset-md-3 offset-lg-3">
+            <label for="nom">Nom</label> : <br>
+            <input class="form-control" name="nom" id="nom" type='text' placeholder="Nom"> <br>
+            <label for="prenom">Prénom</label> : <br>
+            <input class="form-control"name='prenom' id="prenom" type='text' placeholder="Prénom"> <br>
+            <label for="pseudo">Pseudo</label> : <br>
+            <input class="form-control"name='pseudo' id="pseudo" type='text' placeholder="Pseudo"> <br>
+            <label for="email">Mail</label> : <br>
+            <input class="form-control"name='email' id="email" type='mail' placeholder="Mail"> <br>
+            <label for="mdp">Mot de passe</label> : <br>
+            <input class="form-control"name='mdp' id="mdp" type='password' placeholder="Mot de passe"> <br>
+            <br>
+            <button type="submit" class="btn btn-danger" id="form-submit">S'inscrire</button>
+        </div>
     </form>
 </div>
 <?php

@@ -28,12 +28,14 @@
     <h1>Connexion au compte</h1>
 </div>
 <div id="form">
-    <form action='../backend/connexion.php' method='POST'>
-        <label class="txt" for="pseudo">Pseudo</label> : <br>
-        <input id="pseudo" name='pseudo' type='text' placeholder="Pseudo"> <br>
-        <label class="txt" for="mdp">Mot de passe</label> : <br>
-        <input id="mdp" name='mdp' type='password' placeholder="Mot de passe"> <br>
-        <button type="submit" class="button" id="form-submit">Connexion</button>
+    <form action="../backend/connexion.php" method="POST">
+        <div class="form-group col-md-6 col-lg-6 offset-md-3 offset-lg-3">
+            <label for="pseudo">Pseudo</label> : <br>
+            <input class="form-control" id="pseudo" name='pseudo' type='text' placeholder="Pseudo"> <br>
+            <label for="mdp">Mot de passe</label> : <br>
+            <input class="form-control" id="mdp" name='mdp' type='password' placeholder="Mot de passe"> <br>
+            <button type="submit" class="btn btn-danger" id="form-submit">Connexion</button>
+        </div>
     </form>
 </div>
 </div>
