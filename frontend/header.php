@@ -7,10 +7,6 @@
 <header>
     <div id="logo">
         <a href="index.php"><img src="assets/img/logo.png" alt="Accueil"  width="100"></a>
-<<<<<<< HEAD
-
-=======
->>>>>>> 52f481ef0b8175e2b3dc2ad6411e015addbe557b
         <div class="dropdown">
             <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                <i class="fas fa-user fa-2x"></i>
