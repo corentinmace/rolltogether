@@ -6,11 +6,7 @@
 
 <header>
     <div id="logo">
-<<<<<<< HEAD
-        <a href="index.php"><img src="assets/img/logo.png" alt="Accueil"></a>
-=======
         <a href="index.php"><img src="assets/img/logo.png" alt="Accueil"  width="100"></a>
->>>>>>> a0f89339d5ab8962670cdd74dff5097f4739cc5c
 
         <div class="dropdown">
             <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
