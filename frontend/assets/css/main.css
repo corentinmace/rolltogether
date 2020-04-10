@@ -4,12 +4,8 @@
 }
 
 #main-menu {
-    font-family: "The Wild Breath of Zelda", !important;
-    color: rgb(76, 30, 45), !important;
-}
-
-body {
-    font-family: 'Bebas Neue', cursive, !important;
+    font-family: "Zelda" !important;
+    color: rgb(76, 30, 45) !important;
 }
 
 #logo {
@@ -41,7 +37,7 @@ body {
 }
 
 .txt {
-    padding-left: 50%, !important;
+    padding-left: 50% !important;
 }
 
 #page_co {
@@ -60,7 +56,7 @@ img {
 }
 
 .col-4 {
-    padding-left: auto;
+    padding-left: inherit;
 }
 
 #ico {
