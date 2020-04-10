@@ -1,16 +1,49 @@
 * {
     margin: 0%;
     padding: 0%;
+    font-size: 1rem;
+}
+
+#title {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-weight: 300;
 }
 
 #main-menu {
-    font-family: "Zelda" !important;
+    font-family: "The Wild Breath of Zelda" !important;
     color: rgb(76, 30, 45) !important;
+}
+
+.btn-r2g {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    color: #fff;
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.btn-r2g :hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+    text-decoration: none;
 }
 
 #logo {
     background-color : rgb(76, 30, 45);
-    min-height: 100px;
 }
 
 #main-menu .nav-bar {
@@ -29,11 +62,6 @@
     text-transform: uppercase;
     color: #333;
     text-shadow: 1px 1px 1px #ccc;
-}
-
-#form {
-    padding-top: 5%;
-    padding-left: 45%;
 }
 
 .txt {
@@ -55,10 +83,6 @@ img {
     margin: 1%;
 }
 
-.col-4 {
-    padding-left: inherit;
-}
-
 #ico {
     width: auto;
     height: auto;
@@ -69,7 +93,7 @@ img {
     background-color: rgb(76, 30, 45);
     position: absolute;
     right: 5%;
-    top: -85px;
+    top: -45px;
 }
 
 #dropdownUserMenu {
