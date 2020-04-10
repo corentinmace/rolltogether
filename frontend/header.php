@@ -6,7 +6,7 @@
 
 <header>
     <div id="logo">
-        <a href="index.php"><img src="assets/img/logo.png" alt="Accueil"></a>
+        <a href="index.php"><img src="assets/img/logo.png" alt="Accueil"  width="100"></a>
 
         <div class="dropdown">
             <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
