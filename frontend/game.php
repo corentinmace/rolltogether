@@ -21,8 +21,10 @@
 
 
 <body>
-
-<<<<<<< HEAD
+  <?php
+      include("header.php");
+      include("nav.php");
+  ?>
             <form action='../backend/create_game.php' method='POST' id="form">
                 <label class="txt" for="nom">Nom de la partie :</label>
                 <input name='nom' id="nom" type='text' placeholder="Nom">
@@ -44,21 +46,9 @@
             </form>
     </div>
   </main>
-  <footer>
-=======
-<?php
-include("header.php");
-include("nav.php");
-?>
-
-<div>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi magni corrupti dignissimos ullam facilis? Unde, rem ipsum, qui perferendis doloremque ipsa odio doloribus aliquid exercitationem omnis soluta consectetur nihil dolore.
-</div>
-
-<?php
-include("footer.php");
-?>
->>>>>>> d51ee09743910cfe60aeef763162ae5fe4302a83
+  <?php
+      include("footer.php");
+  ?>
 
 </body>
 

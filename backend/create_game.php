@@ -39,7 +39,7 @@ function createSession() {
 
   $connect->setIni("db.ini");
   // $partie = $connect->query("SELECT * FROM partie;")->fetch(PDO::FETCH_ASSOC);
-      $query = $connect->prepare("INSERT INTO partie(NbJoueur, Visible, Nom,) VALUES(10, :visible, :nom); ");
+      $query = $connect->prepare("INSERT INTO partie(NbJoueur, Visible, Nom, Id_Scenario, Id_User) VALUES(10, :visible, :nom, 0, 0); ");
 
 
   $query->bindParam(':nom', $nom);
