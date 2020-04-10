@@ -17,15 +17,13 @@
       <a href="index.php"><img src="assets/img/logo.png" alt="Accueil"></a>
       <a href="user.php"><img id="user" src="https://img.icons8.com/ios-glyphs/64/000000/user--v1.png"></a>
     </div>
-      <nav id="main-menu">
-          <ul class="nav-bar">
-              <li class="nav-button-game"><a href="index.php">ACCUEIL</a></li>
-              <li class="nav-button-game"><a href="game.php">JOUER</a></li>
-              <li class="nav-button-biblio"><a href="biblio.php">BIBLIOTHEQUE</a></li>
-              <li class="nav-button-shop"><a href="shop.php">BOUTIQUE</a></li>
-              <li class="nav-button-user"><a href="user.php">ESPACE UTILISATEUR</a></li>
-          </ul>
-      </nav>
+    <nav id="main-menu">
+      <a href="index.php">Accueil</a>
+      <a href="game.php">Jouer</a>
+      <a href="biblio.php">Bibliotheque</a>
+      <a href="shop.php">Boutique</a>
+      <a href="user.php">Espace utilisateur</a>
+    </nav>
   </header>
   <main>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloribus reprehenderit, commodi autem omnis quia quas aperiam amet eligendi, optio beatae id, accusamus eaque voluptas deserunt nisi quibusdam. Natus, quam!

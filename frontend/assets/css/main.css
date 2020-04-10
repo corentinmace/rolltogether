@@ -1,3 +1,8 @@
+    @font-face {
+      font-family: "Zelda";
+      src: url("../fonts/Zelda.ttf");
+    }
+
     * {
         margin: 0%;
         padding: 0%;
@@ -6,42 +11,45 @@
     }
 
     #main-menu a {
-        font-family: "The Wild Breath of Zelda" !important;
-        color: rgb(76, 30, 45) !important;
+        font-family: "Zelda";
+        padding: 15px;
+    }
+
+    #main-menu {
+      text-align: center;
+      padding: 10px;
     }
 
     .header-banner {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 1%;
+        padding: 1%;
+        background-color: rgb(76, 30, 45);
     }
 
     #user {
         max-width: 32px;
         max-height: 32px;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(291deg) brightness(107%) contrast(101%);
     }
 
     #user:hover {
-        filter: invert(11%) sepia(18%) saturate(4843%) hue-rotate(307deg) brightness(90%) contrast(88%);
+        filter: invert(37%) sepia(15%) saturate(345%) hue-rotate(320deg) brightness(89%) contrast(83%);
     }
 
-    #main-menu .nav-bar {
-        list-style: none;
-        margin-top: 40px;
+    nav a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: rgb(76, 30, 45);
+      letter-spacing: 2px;
     }
 
-    #main-menu .nav-bar li {
-        display: inline;
-        padding: 0 10px;
-    }
-
-    #main-menu .nav-bar li a {
-        text-decoration: none;
-        padding-left: 25px;
-        text-transform: uppercase;
-        color: #333;
-        text-shadow: 1px 1px 1px #ccc;
+    nav a:hover {
+      background-color: rgb(76, 30, 45);
+      color: white;
+      text-decoration: none;
+      border-radius: 0 0 10px 10px;
     }
 
     #form {
@@ -230,3 +238,29 @@
     .content {
         border: 1px solid black;
     }
+
+  .button {
+    background-color: #FFF;
+    border: none;
+    color: 4c1e2d;
+    width: 200px;
+    border-radius: 15px;
+    transition: 0.5s ease;
+    border: 2px solid #4c1e2d;
+  }
+
+  .button a {
+    color: #4c1e2d;
+  }
+
+   .button:hover a {
+    text-decoration: none;
+    color: white;
+  }
+
+.button:hover {
+  color: white;
+  background-color: #4c1e2d;
+  border: 2px solid #4c1e2d;
+  transition: 0.5s ease;
+}

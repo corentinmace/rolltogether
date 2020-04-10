@@ -13,10 +13,17 @@
 </head>
   <body>
     <header>
-      <div id="logo">
+      <div class="header-banner">
         <a href="index.php"><img src="assets/img/logo.png" alt="Accueil"></a>
-        <a id="user" href="user.php"><img src="https://img.icons8.com/ios-glyphs/64/000000/user--v1.png"></a>
+        <a href="user.php"><img id="user" src="https://img.icons8.com/ios-glyphs/64/000000/user--v1.png"></a>
       </div>
+      <nav id="main-menu">
+        <a href="index.php">Accueil</a>
+        <a href="game.php">Jouer</a>
+        <a href="biblio.php">Bibliotheque</a>
+        <a href="shop.php">Boutique</a>
+        <a href="user.php">Espace utilisateur</a>
+      </nav>
     </header>
     <main>
       <div id="page_in">
