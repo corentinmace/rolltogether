@@ -1,0 +1,15 @@
+#navigation-r2 {
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.nav-r2 {
+    color:  rgb(100, 30, 45);
+    font-weight: 500;
+    font-kerning: none;
+}
+.nav-r2:hover {
+    background-color:  rgb(76, 30, 45);
+    border-radius: 0px 0px 10px 10px;
+    color: white;
+}

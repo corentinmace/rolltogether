@@ -1,266 +1,92 @@
-    @font-face {
-      font-family: "Zelda";
-      src: url("../fonts/Zelda.ttf");
-    }
+* {
+    margin: 0%;
+    padding: 0%;
+}
 
-    * {
-        margin: 0%;
-        padding: 0%;
-        font-family: 'Poppins', sans-serif;
-        letter-spacing: 1px;
-    }
+#main-menu {
+    font-family: "Zelda" !important;
+    color: rgb(76, 30, 45) !important;
+}
 
-    #main-menu a {
-        font-family: "Zelda";
-        padding: 15px;
-    }
+#logo {
+    background-color : rgb(76, 30, 45);
+    min-height: 100px;
+}
 
-    #main-menu {
-      text-align: center;
-      padding: 10px;
-    }
+#main-menu .nav-bar {
+    list-style: none;
+    margin-top: 40px;
+}
 
-    .header-banner {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 1%;
-        background-color: rgb(76, 30, 45);
-    }
+#main-menu .nav-bar li {
+    display: inline;
+    padding: 0 10px;
+}
 
-    #user {
-        max-width: 32px;
-        max-height: 32px;
-        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(291deg) brightness(107%) contrast(101%);
-    }
-
-    #user:hover {
-        filter: invert(37%) sepia(15%) saturate(345%) hue-rotate(320deg) brightness(89%) contrast(83%);
-    }
-
-    nav a {
-      text-transform: uppercase;
-      text-decoration: none;
-      color: rgb(76, 30, 45);
-      letter-spacing: 2px;
-    }
-
-    nav a:hover {
-      background-color: rgb(76, 30, 45);
-      color: white;
-      text-decoration: none;
-      border-radius: 0 0 10px 10px;
-    }
-
-    #form {
-      display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 50vh;
-        text-align: center;
-        flex-direction: column;
-    }
-
-    #form p {
-      margin-top: .5rem;
-    }
-
-    .txt {
-        padding-left: 50%, !important;
-    }
-
-    #page_co {
-        text-align: center;
-        padding-top: 10%;
-    }
-
-    #page_in {
-        text-align: center;
-        padding-top: 5%;
-    }
-
-    img {
-        max-width: 250px;
-    }
-
-    header {
-        margin-bottom: 10px;
-    }
-
-    #ligne {
-        border-top: solid black 2px;
-        border-bottom: solid black 2px;
-        margin-top: 10vh;
-    }
-
-    footer {
-        margin-top: 1%;
-    }
-
-    #ico {
-        width: auto;
-        height: auto;
-    }
-
-    #titre {
-        text-align: center;
-        font-family: "The Wild Breath of Zelda";
-        height: 13vh;
-    }
-
-    #titre h1 {
-        margin-top: 5vh;
-    }
-
-    .row {
-        padding-left: 5%;
-        margin-top: 40%;
-    }
-
-    .switch {
-        position: relative;
-        display: flex;
-        width: 60px;
-        height: 34px;
-    }
-
-  #switch {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 5px;
-  }
-
-  #switch a {
-    font-size: 12px;
-    color: black;
-    margin-left: 1px;
-  }
-
-  #switch p {
-    font-size: 15px;
-    margin: 2px;
-  }
-
-
-
-    .switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
-
-    .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-
-    .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-
-    input:checked+.slider {
-        background-color: #4c1e2d;
-    }
-
-    input:focus+.slider {
-        box-shadow: 0 0 1px #4c1e2d;
-    }
-
-    input:checked+.slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
-    }
-
-    .slider.round {
-        border-radius: 34px;
-    }
-
-    .slider.round:before {
-        border-radius: 50%;
-    }
-
-    #contenu {
-      display: flex;
-      flex-direction: column;
-      width: 95%;
-      margin: auto;
-    }
-
-    #contenu__top {
-      display: inline-flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
-    #contenu__text {
-      min-width: 15%;
-      max-width: 15%;
-    }
-    #contenu__chat {
-      display: inline-flex;
-      justify-content: flex-end;
-      flex-direction: column;
-      min-width: 15%;
-      max-width: 15%;
-    }
-
-    #contenu__diapos {
-      display: inline-flex;
-      flex-direction: column;
-      justify-content: space-around;
-      min-width: 60%;
-    }
-
-    #contenu__diapos__mini-diapos {
-      min-height: 20%;
-    }
-
-    #contenu__diapos__selected {
-      min-height: 75%;
-    }
-    .content {
-        border: 1px solid black;
-    }
-
-  .button {
-    background-color: #FFF;
-    border: none;
-    color: 4c1e2d;
-    width: 200px;
-    border-radius: 15px;
-    transition: 0.5s ease;
-    border: 2px solid #4c1e2d;
-  }
-
-  .button a {
-    color: #4c1e2d;
-  }
-
-   .button:hover a {
+#main-menu .nav-bar li a {
     text-decoration: none;
-    color: white;
-  }
+    padding-left: 25px;
+    text-transform: uppercase;
+    color: #333;
+    text-shadow: 1px 1px 1px #ccc;
+}
 
-.button:hover {
-  color: white;
-  background-color: #4c1e2d;
-  border: 2px solid #4c1e2d;
-  transition: 0.5s ease;
+#form {
+    padding-top: 5%;
+    padding-left: 45%;
+}
+
+.txt {
+    padding-left: 50% !important;
+}
+
+#page_co {
+    text-align: center;
+    padding-top: 10%;
+}
+
+#page_in {
+    text-align: center;
+    padding-top: 5%;
+}
+
+img {
+    max-width: 250px;
+    margin: 1%;
+}
+
+.col-4 {
+    padding-left: inherit;
+}
+
+#ico {
+    width: auto;
+    height: auto;
+}
+
+#dropdownMenuLink {
+    color: white;
+    background-color: rgb(76, 30, 45);
+    position: absolute;
+    right: 5%;
+    top: -85px;
+}
+
+#dropdownUserMenu {
+    margin-right: 30px;
+    width: 80px;
+}
+
+#titre {
+    text-align: center;
+    font-family: "The Wild Breath of Zelda";
+    height: 13vh;
+}
+
+#titre h1 {
+    margin-top: 5vh;
+}
+
+.row {
+    padding: 0% 3% 2% 3%;
 }
