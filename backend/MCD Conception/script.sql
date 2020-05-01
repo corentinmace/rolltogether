@@ -5,6 +5,8 @@
 drop database if exists rolltogether;
 create database rolltogether;
 use rolltogether;
+
+ALTER DATABASE rolltogether CHARACTER SET utf8 COLLATE utf8_general_ci;
 #------------------------------------------------------------
 # Table: User
 #------------------------------------------------------------

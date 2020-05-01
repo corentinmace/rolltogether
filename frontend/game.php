@@ -21,10 +21,23 @@
 
 
 <body>
-  <?php
-      include("header.php");
-      include("nav.php");
-  ?>
+              <?php
+              if ( empty(session_id()) ) session_start();
+
+
+                  include("header.php");
+                  include("nav.php");
+              ?>
+              <?php
+              $param = parse_ini_file('../backend/db.ini');
+
+                try {
+                  $dbh = new PDO($param['dbname'], $param['user'], $param['password']);
+                } catch (PDOException $e) {
+                    echo("Erreur de connexion");
+                    exit;
+                }
+                 ?>
             <form action='../backend/create_game.php' method='POST' id="form">
                 <label class="txt" for="nom">Nom de la partie :</label>
                 <input name='nom' id="nom" type='text' placeholder="Nom">
@@ -38,9 +51,17 @@
               </div>
                 <label for="scenar">Choisissez un scénario :</label>
                 <select id="cars" name="cars">
-                    <option value="volvo">Scénar 1</option>
-                    <option value="saab">Scénar 2</option>
-                    <option value="fiat">Scénar 3</option>
+                  <?php
+                  $tab = "SELECT Nom FROM scenario;";
+                                       $sql = $dbh->prepare($tab);
+                                       $sql->execute();
+
+                                       while($ligne = $sql->fetch(PDO::FETCH_NUM)){
+                                           foreach($ligne as $val){
+                                               echo "<option name='$val'>$val</option>";
+                                           }
+                                       }
+                       ?>
                 </select>
                 <button type="submit" name="button" class="button" id="form-submit">Lancer la partie</button>
             </form>

@@ -16,6 +16,7 @@
 
 <body>
 <?php
+if ( empty(session_id()) ) session_start(); 
     include("header.php");
     include("nav.php");
 ?>
@@ -44,17 +45,13 @@
         </div>
 
         <?php
-        if(session_status() !== PHP_SESSION_ACTIVE) {
-          session_start();
-        }
+        // if(session_status() !== PHP_SESSION_ACTIVE) {
+        //   session_start();
+        // }
+
           echo '<a target="_blank" href=partie.php?id='.session_id().'>Inviter dans la partie</a>';
         echo '<p>Salle : '.session_id().'</p>';
-        // if (isset($_GET['id'])) {
-        //   session_id($_GET['id']);
-        //
-        //     echo '<p>Salle : '.session_id().'</p>';
-        //
-        // }
+
          ?>
     </main>
 
