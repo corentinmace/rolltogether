@@ -28,16 +28,6 @@
                   include("header.php");
                   include("nav.php");
               ?>
-              <?php
-              $param = parse_ini_file('../backend/db.ini');
-
-                try {
-                  $dbh = new PDO($param['dbname'], $param['user'], $param['password']);
-                } catch (PDOException $e) {
-                    echo("Erreur de connexion");
-                    exit;
-                }
-                 ?>
             <form action='../backend/create_game.php' method='POST' id="form">
                 <label class="txt" for="nom">Nom de la partie :</label>
                 <input name='nom' id="nom" type='text' placeholder="Nom">
@@ -47,19 +37,17 @@
                     <input name="visible" type="checkbox" checked>
                     <span class="slider round"></span>
                 </label>
-                <p>Partie privée</p>
               </div>
                 <label for="scenar">Choisissez un scénario :</label>
-                <select id="cars" name="cars">
+                <select id="scenario" name="scenario">
                   <?php
-                  $tab = "SELECT Nom FROM scenario;";
-                                       $sql = $dbh->prepare($tab);
+                                       $parameters = parse_ini_file('../backend/db.ini');
+                                       $connect = new PDO($parameters['dbname'], $parameters['user'], $parameters['password']);
+                                       $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                                       $sql = $connect->prepare("SELECT * FROM scenario");
                                        $sql->execute();
-
-                                       while($ligne = $sql->fetch(PDO::FETCH_NUM)){
-                                           foreach($ligne as $val){
-                                               echo "<option name='$val'>$val</option>";
-                                           }
+                                       while($row = $sql->fetch()) {
+                                         echo "<option value=".$row['Id'].">".$row['Nom']."</option>";
                                        }
                        ?>
                 </select>

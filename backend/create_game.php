@@ -27,23 +27,26 @@ function createSession() {
 
 
   $nom = htmlspecialchars($_POST['nom']);
+  $scenario = htmlspecialchars($_POST['scenario']);
   if(isset($_POST['visible'])) {
     $visible=0;
   } else {
     $visible=1;
   }
 
+var_dump($scenario);
 
 
   $connect = Database::getInstance();
 
   $connect->setIni("db.ini");
   // $partie = $connect->query("SELECT * FROM partie;")->fetch(PDO::FETCH_ASSOC);
-      $query = $connect->prepare("INSERT INTO partie(NbJoueur, Visible, Nom, Id_Scenario, Id_User) VALUES(10, :visible, :nom, 1, 666); ");
+      $query = $connect->prepare("INSERT INTO partie(NbJoueur, Visible, Nom, Id_Scenario, Id_User) VALUES(10, :visible, :nom, :scenario, 666); ");
 
 
   $query->bindParam(':nom', $nom);
   $query->bindParam(':visible', $visible);
+  $query->bindParam(':scenario', $scenario);
 
   try{
       $query->execute(); // On exécute la requête

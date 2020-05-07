@@ -16,7 +16,7 @@
 
 <body>
 <?php
-if ( empty(session_id()) ) session_start(); 
+if ( empty(session_id()) ) session_start();
     include("header.php");
     include("nav.php");
 ?>
@@ -45,13 +45,10 @@ if ( empty(session_id()) ) session_start();
         </div>
 
         <?php
-        // if(session_status() !== PHP_SESSION_ACTIVE) {
-        //   session_start();
-        // }
 
-          echo '<a target="_blank" href=partie.php?id='.session_id().'>Inviter dans la partie</a>';
+        
+        echo '<a target="_blank" href=partie.php?id='.session_id().'>Inviter dans la partie</a>';
         echo '<p>Salle : '.session_id().'</p>';
-
          ?>
     </main>
 
