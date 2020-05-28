@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -24,9 +26,11 @@
     include("header.php");
     include("nav.php");
 ?>
+<main>
 <div>
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in expedita distinctio? Illum vero, provident sequi laboriosam amet voluptatibus numquam consectetur, architecto voluptatum ex neque esse eaque perspiciatis optio velit.
 </div>
+</main>
 <?php
     include("footer.php");
 ?>

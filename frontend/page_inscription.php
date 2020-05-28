@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -23,28 +24,30 @@
 <?php
     include("header.php");
 ?>
+<main>
 
-<div id="page_in">
+  <div id="page_in">
     <h1>Création de compte</h1>
-</div>
-<div id="form">
-    <form action="../backend/inscription.php" method="POST">
-        <div class="form-group col-md-6 col-lg-6 offset-md-3 offset-lg-3">
-            <label for="nom">Nom</label> : <br>
-            <input class="form-control" name="nom" id="nom" type='text' placeholder="Nom"> <br>
-            <label for="prenom">Prénom</label> : <br>
-            <input class="form-control"name='prenom' id="prenom" type='text' placeholder="Prénom"> <br>
-            <label for="pseudo">Pseudo</label> : <br>
-            <input class="form-control"name='pseudo' id="pseudo" type='text' placeholder="Pseudo"> <br>
-            <label for="email">Mail</label> : <br>
-            <input class="form-control"name='email' id="email" type='mail' placeholder="Mail"> <br>
-            <label for="mdp">Mot de passe</label> : <br>
-            <input class="form-control"name='mdp' id="mdp" type='password' placeholder="Mot de passe"> <br>
-            <br>
-            <button type="submit" class="btn btn-danger" id="form-submit">S'inscrire</button>
-        </div>
-    </form>
-</div>
+  </div>
+
+  <form action="../backend/inscription.php" method="POST">
+    <div class="form-group col-md-6 col-lg-6 offset-md-3 offset-lg-3">
+      <label for="nom">Nom</label> : <br>
+      <input class="form-control" name="nom" id="nom" type='text' placeholder="Nom"> <br>
+      <label for="prenom">Prénom</label> : <br>
+      <input class="form-control"name='prenom' id="prenom" type='text' placeholder="Prénom"> <br>
+      <label for="pseudo">Pseudo</label> : <br>
+      <input class="form-control"name='pseudo' id="pseudo" type='text' placeholder="Pseudo"> <br>
+      <label for="email">Mail</label> : <br>
+      <input class="form-control"name='email' id="email" type='mail' placeholder="Mail"> <br>
+      <label for="mdp">Mot de passe</label> : <br>
+      <input class="form-control"name='mdp' id="mdp" type='password' placeholder="Mot de passe"> <br>
+      <br>
+      <button type="submit" class="btn btn-danger" id="form-submit">S'inscrire</button>
+    </div>
+  </form>
+</main>
+
 <?php
     include("footer.php");
 ?>

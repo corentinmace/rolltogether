@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,14 +23,17 @@
 
 <body>
               <?php
-              if ( empty(session_id()) ) session_start();
 
 
                   include("header.php");
                   include("nav.php");
               ?>
+              <?php
+                  $pseudo = $_SESSION['pseudo'];
+              ?>
+              <main>
             <form action='../backend/create_game.php' method='POST' id="form">
-                <label class="txt" for="nom">Nom de la partie :</label>
+                <label for="nom">Nom de la partie :</label>
                 <input name='nom' id="nom" type='text' placeholder="Nom">
                 <div id="switch">
                   <p>Partie publique</p>
@@ -53,7 +57,6 @@
                 </select>
                 <button type="submit" name="button" class="button" id="form-submit">Lancer la partie</button>
             </form>
-    </div>
   </main>
   <?php
       include("footer.php");

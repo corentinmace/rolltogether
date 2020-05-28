@@ -16,7 +16,7 @@ if(isset($_POST) && !empty($_POST)){
         if(hash("SHA512", $mdp) === $query['password']){ // Si les deux correspondent
             session_start(); // On lance la session
             $_SESSION['pseudo'] = $pseudo; // On stocke le pseudo en session
-            $_SESSION['id'] = $query['id']; // On stocke le pseudo en session
+            $_SESSION['id'] = $query['id'];
             header("Location: ../frontend/user.php?co=true"); // On redirige vers la page utilisateur
         }else{
             echo "Les identifiants sont incorrects !";

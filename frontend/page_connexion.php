@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -23,11 +24,10 @@
 <?php
     include("header.php");
 ?>
-
+<main>
 <div id="page_co">
     <h1>Connexion au compte</h1>
 </div>
-<div id="form">
     <form action="../backend/connexion.php" method="POST">
         <div class="form-group col-md-6 col-lg-6 offset-md-3 offset-lg-3">
             <label for="pseudo">Pseudo</label> : <br>
@@ -38,7 +38,7 @@
         </div>
     </form>
 </div>
-</div>
+</main>
 <?php
     include("footer.php");
 ?>

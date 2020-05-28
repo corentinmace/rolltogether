@@ -1,7 +1,7 @@
 
 <footer>
     <div id="foot-r2">
-        <div class="row">
+        <div class="footer">
             <div class="col-4">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eaque quidem est sed totam praesentium voluptates odit, beatae officia minus molestias porro aperiam ea repellat fuga cum eligendi laudantium? Numquam.
             </div>

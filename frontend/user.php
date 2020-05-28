@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -25,10 +26,31 @@
     include("header.php");
     include("nav.php");
 ?>
-<div id="button-co">
-    <button><a href="page_inscription.php">S'inscrire</a></button>
-    <button><a href="page_connexion.php">Se connecter</a></button>
-</div>
+<main>
+
+  <?php
+
+  if (empty($_SESSION['pseudo'])){
+
+    echo '<div id="button-co">
+    <button class="button"><a href="page_inscription.php">S\'inscrire</a></button>
+    <button class="button"><a href="page_connexion.php">Se connecter</a></button>
+    </div>';
+
+  } else {
+
+    echo '
+    <div>
+      <p>Bienvenue sur votre Espace utilisateur, '.$_SESSION['pseudo'].'
+    </div>
+    <div id="button-co">
+    <form action="../backend/logout.php" method="POST">
+    <button type="submit" class="btn btn-danger" id="form-submit">Deconnexion</button>
+    </div>';
+  }
+  ?>
+</main>
+
 <?php
     include("footer.php");
 ?>

@@ -2,6 +2,7 @@
 
   require "Database.php";
 
+
 function generateRandomString($length = 25) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $charactersLength = strlen($characters);
@@ -18,13 +19,13 @@ function createSession() {
   session_name(generateRandomString());
   session_start();
   $_SESSION['data'] = time();
+
   //
   // echo '<a target="_blank" href=index.php?id='.session_id().'>Inviter dans la partie</a>';
   //
   // echo '<p>Salle : '.session_id().'</p>';
 
   $id = session_id();
-
 
   $nom = htmlspecialchars($_POST['nom']);
   $scenario = htmlspecialchars($_POST['scenario']);
@@ -34,7 +35,6 @@ function createSession() {
     $visible=1;
   }
 
-var_dump($scenario);
 
 
   $connect = Database::getInstance();

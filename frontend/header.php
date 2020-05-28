@@ -5,7 +5,14 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 <header>
-    <div id="logo">
+
+
+        <?php
+        session_start();
+        if (empty($_SESSION['pseudo'])){
+
+        echo
+        ' <div id="logo">
         <a href="index.php"><img src="assets/img/logo.png" alt="Accueil"  width="100"></a>
         <div class="dropdown">
             <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -16,5 +23,16 @@
                 <a class="dropdown-item" href="page_connexion.php">Connexion</a>
             </div>
         </div>
+    </div>';
+        } else {
+          echo   '<div id="logo">
+                <a href="index.php"><img src="assets/img/logo.png" alt="Accueil"  width="100"></a>
+            <div class="dropdown">
+              <a class="" href="user.php" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user fa-2x"></i>
+              </a>
+              </div>';
+        }
+         ?>
     </div>
 </header>

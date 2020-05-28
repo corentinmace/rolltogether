@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,7 +17,6 @@
 
 <body>
 <?php
-if ( empty(session_id()) ) session_start();
     include("header.php");
     include("nav.php");
 ?>
@@ -46,7 +46,7 @@ if ( empty(session_id()) ) session_start();
 
         <?php
 
-        
+
         echo '<a target="_blank" href=partie.php?id='.session_id().'>Inviter dans la partie</a>';
         echo '<p>Salle : '.session_id().'</p>';
          ?>
